@@ -1,0 +1,82 @@
+*{
+    margin:0px;
+    padding:0px;
+    background-color: pink;
+    animation-name : variety;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+@keyframes variety{
+    from{background-color: pink;}
+    to{background-color: green;}
+}
+h1{
+    text-shadow: 4px 4px 4px white;
+}
+
+ul
+{
+   border: 1px solid black;
+   position: -webkit-sticky;
+   position: sticky;
+   top: 0px;
+   background-color: rgb(151, 112, 54);
+   border-radius: 50px;
+   text-decoration: none;
+}
+li 
+{
+    display: inline-block;
+    padding: 20px 45px;
+
+}
+a{
+    text-decoration: none;
+    color: yellow;
+}
+a:hover{
+    background-color: red;
+}
+.home{
+    border: 1px solid black;
+    display: inline-block;
+    text-align: center;
+    font-size: 40px;
+   
+}
+#volumes{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr     1fr;
+    row-gap: 60px;
+
+}
+.images{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.link{
+    display: inline-block;
+    padding : 50px 50px;
+    font-size: 20px;
+}
+a:hover{
+    background-color: white;
+}
+@media screen and(max-width:600px) {
+    .home{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        "HOME"
+        "ARTICLES"
+        "EXPERIENCE"
+        "HOBIES"
+        "IMAGES"
+        "BLOGS"
+        row-gap: 1rem;
+    }
+    
+
+    
+}
